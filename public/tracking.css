@@ -1,0 +1,87 @@
+body {
+  height: 100dvh;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.tracking-container {
+  align-self: center;
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: aliceblue;
+}
+
+.tracking-container a {
+  text-decoration: none;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Connector Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  height: 5px;
+  background: #ddd;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+/* Step Circles */
+.circle {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #ddd;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Active Step */
+.active .circle {
+  background: green;
+  color: white;
+}
+
+/* Active Line */
+.step.active ~ .step::before {
+  background: green;
+}
+.btn {
+  width: 100%;
+  padding: 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+
+  &:hover {
+    background: #218838;
+  }
+}

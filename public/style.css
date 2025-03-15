@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fce4ec;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #d81b60;
+  font-family: "Playfair Display", serif;
+}
+p {
+  font-family: "Lora", serif;
+}
+
+.price {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background: #d81b60;
+  transition: 0.3s;
+  color: white;
+  &:hover {
+    background: #c2185b;
+  }
+}

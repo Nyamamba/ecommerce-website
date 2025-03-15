@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.back-btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.back-btn-div button {
+  /* Target the button element directly */
+  text-decoration: none;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: #c2185b;
+  cursor: pointer;
+  position: relative; /* Needed for positioning the span */
+  padding-left: 20px; /* Add padding to make space for the arrow */
+}
+
+.back-btn-div .back-arrow {
+  position: absolute;
+  left: 5px; /* Initial position of the arrow */
+  transition: left 0.3s ease; /* Smooth transition */
+}
+
+.back-btn-div button:hover {
+  text-decoration: underline;
+}
+
+.back-btn-div button:hover .back-arrow {
+  /* Target the span on button hover */
+  left: 0px; /* Move the arrow to the left on hover */
+}
+
+.profile-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+.profile-card {
+  margin-bottom: 20px;
+}
+
+.profile-card h2 {
+  text-transform: capitalize;
+}
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #d81b60;
+}
+.username {
+  color: #333;
+  margin: 10px 0;
+}
+.email {
+  color: #777;
+  font-size: 14px;
+}
+.logout-btn {
+  background-color: #d81b60;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.logout-btn:hover {
+  background-color: #c2185b;
+}
+.profile-details {
+  text-align: left;
+  margin-top: 20px;
+}
+.profile-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.profile-actions .btn a,
+.profile-actions i {
+  color: #d81b60;
+  cursor: pointer;
+}
+
+.profile-actions .btn i {
+  font-size: 1.2rem;
+}
+.logout-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.user_name {
+  text-transform: capitalize;
+}
+/* Responsive Design */
+@media (min-width: 768px) {
+  .profile-container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-card,
+  .profile-details {
+    width: 100%;
+  }
+}
