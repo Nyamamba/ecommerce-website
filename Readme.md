@@ -82,7 +82,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 For inquiries or contributions, feel free to reach out:
 
-- **Email:** [your.email@example.com](cleopasmmuchiri@gmail.com)
-- **GitHub:** [Your GitHub Profile](https://github.com/CleopasMMuchiri)
+- **Email:** [my email address](reachnyamamba@gmail.com)
+- **GitHub:** [Your GitHub Profile](https://github.com/Nyamamba)
 
 # ecommerce_website
