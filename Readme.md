@@ -1,6 +1,6 @@
 # Project Name
 
-ECOMMERCE
+GLOW & GLAM ECOMMERCE WEBSITE
 
 ## Description
 
